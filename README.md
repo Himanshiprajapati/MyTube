@@ -39,32 +39,75 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### `File Structure`
+Creating a diagrammatic representation of your React app's file structure can help you understand and visualize the project's layout. Below is a diagram representing the structure :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+YT-CLONE/
+│
+├── node_modules/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── categoriesBar/
+│   │   │   ├── _categoriesBar.scss
+│   │   │   └── categoriesBar.js
+│   │   ├── header/
+│   │   │   ├── _header.scss
+│   │   │   └── header.js
+│   │   ├── sidebar/
+│   │   │   ├── _sideBar.scss
+│   │   │   └── sidebar.js
+│   │   ├── video/
+│   │       └── Video.js
+│   │
+│   ├── screens/
+│   │   └── homeScreen/
+│   │       └── homeScreen.js
+│   │
+│   ├── _app.scss
+│   ├── _base.scss
+│   ├── App.js
+│   └── index.js
+│
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+└── [M4]
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Explanation:
 
-### Code Splitting
+- **YT-CLONE/**: The root directory of the project.
+  - **node_modules/**: Directory for installed Node.js packages.
+  - **public/**: Typically contains static assets like index.html.
+  - **src/**: Source code directory.
+    - **components/**: Directory for reusable components.
+      - **categoriesBar/**: Directory for the categories bar component.
+        - `_categoriesBar.scss`: SCSS file for styling the categories bar component.
+        - `categoriesBar.js`: JavaScript file for the categories bar component.
+      - **header/**: Directory for the header component.
+        - `_header.scss`: SCSS file for styling the header component.
+        - `header.js`: JavaScript file for the header component.
+      - **sidebar/**: Directory for the sidebar component.
+        - `_sideBar.scss`: SCSS file for styling the sidebar component.
+        - `sidebar.js`: JavaScript file for the sidebar component.
+      - **video/**: Directory for the video component.
+        - `Video.js`: JavaScript file for the video component.
+    - **screens/**: Directory for different screens/pages.
+      - **homeScreen/**: Directory for the home screen component.
+        - `homeScreen.js`: JavaScript file for the home screen.
+    - `_app.scss`: SCSS file for global styles.
+    - `_base.scss`: Base SCSS file for foundational styles.
+    - `App.js`: Main App component file.
+    - `index.js`: Entry point of the React application.
+  - **.gitignore**: Git ignore file to exclude certain files from version control.
+  - **package-lock.json**: Lockfile for installed npm dependencies.
+  - **package.json**: Metadata file for npm dependencies and scripts.
+  - **README.md**: Project description and instructions.
+  - **[M4]**: Unclear based on given context; possibly a placeholder or specific folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
